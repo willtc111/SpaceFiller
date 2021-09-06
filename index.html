@@ -1,0 +1,32 @@
+<head>
+    <script src="./two.js"></script>
+    <script src="./jquery-3.6.0.js"></script>
+</head>
+<body>
+    <div id="title">Space Filler Generation</div>
+    <div>Dimensions: <span id="dimensions"></span></div>
+    <div class="dimensionSliderContainer">
+        <input id="dimensionSlider" type="range" min="2" max="25" value="3" class="slider" style="width: 50%">
+    </div>
+
+    <div id="generateContainer">
+        <button>Generate</button>
+    </div>
+    <div id="stepContainer">
+        <button><span id="stepButtonText">Start</span></button>
+    </div>
+    <div id="drawingArea"></div>
+    <script src="./SpaceFiller.js"></script>
+    <div class="neighborWeightSliderContainer">
+        <input id="neighborWeightSlider" type="range" min="0" max="10" step="0.1" value="1" class="slider" style="width: 50%">
+    </div>
+    <div class="otherWeightSliderContainer">
+        <input id="otherWeightSlider" type="range" min="0" max="10" step="0.1" value="1" class="slider" style="width: 50%">
+    </div>
+    <div class="unkinkWeightSliderContainer">
+        <input id="unkinkWeightSlider" type="range" min="0" max="10" step="0.1" value="1" class="slider" style="width: 50%">
+    </div>
+    <div class="momentumSliderContainer">
+        <input id="momentumSlider" type="range" min="0" max="1" step="0.1" value="0.5" class="slider" style="width: 50%">
+    </div>
+</body>
